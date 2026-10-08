@@ -40,7 +40,7 @@ A standard, reusable framework for migrating data from **Oracle Database** to **
 
 ## Architecture
 
-![Oracle to BigQuery migration architecture](docs/architecture.png)
+![Oracle to BigQuery migration architecture](images/architecture.png)
 
 Oracle data reaches BigQuery in two separate steps. The **extract job** writes Parquet files to Cloud Storage, then the **load job** loads those files into BigQuery `RAW`. Cloud Storage is the hand-off point between the two jobs. If a load fails, it re-runs from the landed files without querying Oracle again, and the files also serve as the audit copy of each extract.
 
