@@ -1,0 +1,25 @@
+# Terraform generated files
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+
+# Python
+**/__pycache__/
+**/.pytest_cache/
+**/.venv/
+*.pyc
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/

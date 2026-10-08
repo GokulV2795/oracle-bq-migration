@@ -1,0 +1,49 @@
+tables:
+
+  - name: MB_CUSTOMERS
+    primary_key: CUSTOMER_ID
+    watermark_column: UPDATED_DATE
+    cdc_enabled: true
+    batch_size: 50000
+
+  - name: MB_PRODUCTS
+    primary_key: PRODUCT_ID
+    watermark_column: UPDATED_DATE
+    cdc_enabled: true
+    batch_size: 50000
+
+  - name: MB_CATEGORIES
+    primary_key: CATEGORY_ID
+    watermark_column: UPDATED_DATE
+    cdc_enabled: true
+    batch_size: 50000
+
+  - name: MB_STORES
+    primary_key: STORE_ID
+    watermark_column: UPDATED_DATE
+    cdc_enabled: true
+    batch_size: 50000
+
+  - name: MB_INVENTORY
+    primary_key: INVENTORY_ID
+    watermark_column: UPDATED_DATE
+    cdc_enabled: true
+    batch_size: 50000
+
+  - name: MB_ORDERS
+    primary_key: ORDER_ID
+    watermark_column: UPDATED_DATE
+    cdc_enabled: true
+    batch_size: 50000
+
+  - name: MB_ORDER_ITEMS
+    primary_key: ORDER_ITEM_ID
+    watermark_column: UPDATED_DATE
+    cdc_enabled: true
+    batch_size: 50000
+
+  - name: MB_PAYMENTS
+    primary_key: PAYMENT_ID
+    watermark_column: UPDATED_DATE
+    cdc_enabled: true
+    batch_size: 50000
